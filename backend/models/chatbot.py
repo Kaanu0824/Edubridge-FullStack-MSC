@@ -1,10 +1,3 @@
-"""
-models/chatbot.py — Intent chatbot model loader and inference.
-
-Loads from: saved_models/intent_model.joblib
-            saved_models/intent_data.joblib
-            dataset/chatbot/intents.json
-"""
 
 import os
 import json
