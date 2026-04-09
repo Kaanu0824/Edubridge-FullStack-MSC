@@ -1,35 +1,3 @@
-"""
-train_audio_model.py — Retrain EduBridge audio stress model.
-
-Matches the EXACT architecture of the current audio_model.keras:
-    Input:  (40,)  — 40 MFCC features
-    Dense(128, relu) → Dense(64, relu) → Dense(n_classes, softmax)
-
-Dataset: RAVDESS (recommended)
-    Download: https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio
-
-    After downloading, sort .wav files into:
-        dataset/audio/normal/    ← calm, neutral, happy audio
-        dataset/audio/stressed/  ← angry, fearful, sad audio
-
-    RAVDESS emotion code guide (filename: 03-01-XX-...):
-        01 = neutral  → normal/
-        02 = calm     → normal/
-        03 = happy    → normal/
-        04 = sad      → stressed/
-        05 = angry    → stressed/
-        06 = fearful  → stressed/
-        07 = disgust  → stressed/
-        08 = surprised→ normal/
-
-Run from backend/:
-    python training/train_audio_model.py
-
-Output:
-    saved_models/audio_model.keras
-    saved_models/audio_class_indices.json
-"""
-
 import os
 import sys
 import json

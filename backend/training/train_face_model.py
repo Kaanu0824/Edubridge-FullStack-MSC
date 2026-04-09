@@ -1,27 +1,3 @@
-"""
-train_face_model.py — Retrain EduBridge face emotion model.
-
-Matches the EXACT architecture of the current face_model.keras:
-    Input:  (48, 48, 3)
-    Conv2D(32) → MaxPool → Conv2D(64) → MaxPool → Conv2D(128) → MaxPool
-    → Flatten → Dense(128) → Dense(n_classes, softmax)
-
-Dataset: FER2013
-    Download: https://www.kaggle.com/datasets/msambare/fer2013
-    Extract so structure is:
-        dataset/face/train/angry/...
-        dataset/face/train/happy/...
-        dataset/face/test/angry/...
-        (etc.)
-
-Run from backend/:
-    python training/train_face_model.py
-
-Output:
-    saved_models/face_model.keras
-    saved_models/face_class_indices.json
-"""
-
 import os
 import sys
 import json

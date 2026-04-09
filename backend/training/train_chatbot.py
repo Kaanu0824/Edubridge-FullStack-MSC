@@ -1,16 +1,3 @@
-"""
-training/train_chatbot.py — Train chatbot intent classifier.
-
-Uses: backend/dataset/chatbot/intents.json
-
-Run from backend/:
-    python training/train_chatbot.py
-
-Output saved to:
-    saved_models/intent_model.joblib
-    saved_models/intent_data.joblib
-"""
-
 import os
 import sys
 import json
