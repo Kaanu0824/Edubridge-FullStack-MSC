@@ -53,9 +53,10 @@ coverage/
 .pytest_cache/
 htmlcov/
 
-# ML / Model files
-*.pkl
-*.h5
-*.pt
-*.pth
-saved_model*/
+
+# Datasets (large files — download separately)
+backend/dataset/face/
+backend/dataset/audio/
+
+# Generated output
+backend/reports/
