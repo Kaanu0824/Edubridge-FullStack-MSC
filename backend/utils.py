@@ -1,7 +1,3 @@
-"""
-utils.py — Shared utility functions for EduBridge backend.
-"""
-
 import os
 import json
 import base64
