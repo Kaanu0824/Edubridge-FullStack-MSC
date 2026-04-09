@@ -135,16 +135,12 @@ source venv/bin/activate        # Mac/Linux
 pip install -r requirements.txt
 pip install tf_keras scikit-learn --upgrade
 
-# 4. Add model files to saved_models/
-#    face_model.keras
-#    audio_model.keras
-#    face_class_indices.json
-#    audio_class_indices.json
-
-# 5. Train chatbot model
+# 4. Train chatbot model
+python training/face.py
+python training/audio.py
 python training/train_chatbot.py
 
-# 6. Start the API
+# 5. Start the API
 PORT=8000 python app.py
 ```
 
