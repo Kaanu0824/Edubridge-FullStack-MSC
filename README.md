@@ -134,6 +134,8 @@ source venv/bin/activate        # Mac/Linux
 # 3. Install dependencies
 pip install -r requirements.txt
 pip install tf_keras scikit-learn --upgrade
+pip install matplotlib
+pip install pytest
 
 
 # 4. Train chatbot model
@@ -164,6 +166,21 @@ npm start
 The app will be available at `http://localhost:3001`.
 
 ---
+
+### Test Case
+
+```bash
+
+# 1. Run everything
+python run_tests.py
+
+# 2.Run with detail
+python run_tests.py --verbose
+
+# 3.Run one suite only
+python run_tests.py --suite fusion
+python run_tests.py --suite api
+
 
 ## API Endpoints
 
