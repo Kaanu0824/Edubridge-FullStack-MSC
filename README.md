@@ -56,58 +56,91 @@ EduBridge is a full-stack research application developed as a University MSc pro
 
 ```
 Edubridge-Full Stack/
-├── backend/
-│   ├── app.py                      # Flask entry point
-│   ├── utils.py                    # Shared helpers
-│   ├── requirements.txt
-│   ├── Dockerfile
-│   │
-│   ├── models/
-│   │   ├── face.py                 # Face model loader + inference
-│   │   ├── voice.py                # Audio model loader + inference
-│   │   └── chatbot.py              # Chatbot model loader + inference
-│   │
-│   ├── routes/
-│   │   ├── face.py                 # POST /api/analyze/face
-│   │   ├── voice.py                # POST /api/analyze/voice
-│   │   ├── chatbot.py              # POST /api/chat
-│   │   └── report.py               # GET/POST /api/report
-│   │
-│   ├── training/
-│   │   ├── train_face_model.py     # Train CNN on FER2013
-│   │   ├── train_audio_model.py    # Train Dense net on RAVDESS
-│   │   └── train_chatbot.py        # Train intent classifier
-│   │
-│   ├── dataset/
-│   │   ├── face/                   # FER2013 dataset (train/test)
-│   │   ├── audio/                  # RAVDESS audio files
-│   │   └── chatbot/
-│   │       └── intents.json        # 14 intent categories
-│   │
-│   ├── saved_models/               # .keras and .joblib model files
-│   └── reports/                    # Generated stress reports
 │
-└── frontend/
-    ├── src/
-    │   ├── App.js
-    │   ├── index.css
-    │   ├── pages/
-    │   │   ├── Dashboard.jsx
-    │   │   ├── FaceAnalysis.jsx
-    │   │   ├── VoiceAnalysis.jsx
-    │   │   ├── Chatbot.jsx
-    │   │   ├── Reports.jsx
-    │   │   └── Analytics.jsx
-    │   ├── components/
-    │   │   ├── Sidebar.jsx
-    │   │   ├── StressGauge.jsx
-    │   │   └── ToastContainer.jsx
-    │   ├── hooks/
-    │   │   └── useToast.js
-    │   └── utils/
-    │       └── api.js
-    ├── package.json
-    └── Dockerfile
+├── README.md
+│
+├── frontend/
+│   ├── .env                          ← REACT_APP_API_URL + PORT=3001
+│   ├── package.json
+│   ├── Dockerfile
+│   ├── nginx.conf
+│   ├── public/
+│   │   └── index.html
+│   └── src/
+│       ├── index.js
+│       ├── index.css
+│       ├── App.js
+│       ├── components/
+│       │   ├── Sidebar.jsx
+│       │   ├── StressGauge.jsx
+│       │   └── ToastContainer.jsx
+│       ├── hooks/
+│       │   └── useToast.js
+│       ├── pages/
+│       │   ├── Dashboard.jsx
+│       │   ├── FaceAnalysis.jsx
+│       │   ├── VoiceAnalysis.jsx
+│       │   ├── Chatbot.jsx
+│       │   ├── Reports.jsx
+│       │   └── Analytics.jsx
+│       └── utils/
+│           └── api.js
+│
+└── backend/
+    ├── app.py                        ← main entry point (python app.py)
+    ├── utils.py                      ← shared helpers
+    ├── requirements.txt
+    ├── Dockerfile
+    │
+    ├── models/
+    │   ├── __init__.py
+    │   ├── face.py
+    │   ├── voice.py
+    │   └── chatbot.py
+    │
+    ├── routes/
+    │   ├── __init__.py
+    │   ├── face.py
+    │   ├── voice.py
+    │   ├── chatbot.py
+    │   └── report.py
+    │
+    ├── training/
+    │   ├── train_face_model.py
+    │   ├── train_audio_model.py
+    │   └── train_chatbot.py
+    │
+    ├── dataset/
+    │   ├── face/
+    │   │   ├── README.txt
+    │   │   ├── train/               ← FER2013 training images
+    │   │   └── test/                ← FER2013 test images
+    │   ├── audio/
+    │   │   ├── README.txt
+    │   │   ├── normal/              ← RAVDESS calm/neutral files
+    │   │   └── stressed/            ← RAVDESS angry/fearful/sad files
+    │   └── chatbot/
+    │       └── intents.json         ← 17 intent categories
+    │
+    ├── saved_models/                 ← all trained model files go here
+    │   ├── face_model.keras
+    │   ├── face_class_indices.json
+    │   ├── audio_model.keras
+    │   ├── audio_class_indices.json
+    │   ├── intent_model.joblib
+    │   └── intent_data.joblib
+    │
+    ├── reports/                      ← auto-generated JSON reports
+    │   └── history.json
+    │
+    ├── tests/
+    │   ├── __init__.py
+    │   ├── test_utils.py
+    │   ├── test_models.py
+    │   ├── test_api.py
+    │   └── test_fusion.py
+    │
+    └── run_tests.py                  ← python run_tests.py
 ```
 
 ---
