@@ -1,20 +1,3 @@
-"""
-tests/test_models.py
-====================
-Unit tests for EduBridge ML model modules.
-
-Tests cover:
-    - Face model: loading, prediction shape, class labels, stress classification
-    - Voice model: loading, prediction shape, label correctness
-    - Chatbot model: loading, intent prediction, fallback response
-
-All tests skip gracefully if model files are not present, so they can
-be run in CI environments without requiring the trained model files.
-
-Run:
-    python -m pytest tests/test_models.py -v
-"""
-
 import os
 import sys
 import json

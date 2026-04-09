@@ -1,19 +1,3 @@
-"""
-tests/test_fusion.py
-====================
-Unit tests for the EduBridge stress fusion formula and report logic.
-
-The combined stress score formula is:
-    final_score = (face_stress_ratio * 0.6) + (voice_stress_conf * 0.4)
-    stress_level = HIGH if final_score >= 0.5 else NORMAL
-
-These tests verify the mathematical correctness of the formula,
-boundary conditions, and edge cases.
-
-Run:
-    python -m pytest tests/test_fusion.py -v
-"""
-
 import os
 import sys
 import json

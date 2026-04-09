@@ -1,19 +1,3 @@
-"""
-tests/test_utils.py
-===================
-Unit tests for EduBridge shared utility functions.
-
-Tests cover:
-    - Base64 image decoding
-    - Base64 audio decoding
-    - MFCC feature extraction
-    - Class index loading
-    - Image preprocessing edge cases
-
-Run:
-    python -m pytest tests/test_utils.py -v
-"""
-
 import os
 import sys
 import json

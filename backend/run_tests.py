@@ -1,21 +1,3 @@
-"""
-run_tests.py
-============
-EduBridge full test runner.
-
-Runs all test suites and prints a summary report.
-
-Usage:
-    python run_tests.py              # run all tests
-    python run_tests.py --verbose    # detailed output
-    python run_tests.py --suite api  # run one suite only (utils|models|api|fusion)
-
-Output:
-    - Pass/Fail counts per suite
-    - Any failures with details
-    - Overall result
-"""
-
 import os
 import sys
 import time

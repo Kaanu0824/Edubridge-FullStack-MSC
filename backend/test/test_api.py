@@ -1,26 +1,3 @@
-"""
-tests/test_api.py
-=================
-Integration tests for all EduBridge Flask REST API endpoints.
-
-Tests cover:
-    - GET  /api/health
-    - POST /api/analyze/face
-    - POST /api/analyze/voice
-    - POST /api/analyze/combined
-    - POST /api/chat
-    - GET  /api/report
-    - GET  /api/report/history
-
-Each endpoint is tested for:
-    - Correct HTTP status codes (200, 400, 404, 503)
-    - Response JSON structure and field types
-    - Edge cases and invalid input handling
-
-Run:
-    python -m pytest tests/test_api.py -v
-"""
-
 import os
 import sys
 import json
