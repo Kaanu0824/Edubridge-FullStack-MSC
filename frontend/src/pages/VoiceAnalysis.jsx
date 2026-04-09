@@ -1,5 +1,5 @@
-import React, { useState, useRef, useCallback } from 'react';
-import { Mic, MicOff, Play, Square, Upload, Info, Waves } from 'lucide-react';
+import { Info, Mic, Square, Upload, Waves } from 'lucide-react';
+import { useCallback, useRef, useState } from 'react';
 import { analyzeVoice } from '../utils/api';
 
 export default function VoiceAnalysis({ addToast }) {
@@ -92,10 +92,10 @@ export default function VoiceAnalysis({ addToast }) {
       mr.start();
       setRecording(true);
       drawWave();
-      addToast('Recording… speak normally for 3 seconds', 'info');
+      addToast('Recording… speak normally for 15 seconds', 'info');
 
-      // Auto-stop after 3s
-      let c = 3;
+      // Auto-stop after 15s
+      let c = 15;
       setCountdown(c);
       const iv = setInterval(() => {
         c--;
@@ -206,7 +206,7 @@ export default function VoiceAnalysis({ addToast }) {
             {!recording ? (
               <button className="btn btn-primary" onClick={startRecording} disabled={loading}>
                 {loading ? <div className="spinner" /> : <Mic size={16} />}
-                {loading ? 'Analysing…' : 'Record 3 Seconds'}
+                {loading ? 'Analysing…' : 'Record 15 Seconds'}
               </button>
             ) : (
               <button className="btn btn-danger" onClick={stopManually}>
@@ -221,7 +221,7 @@ export default function VoiceAnalysis({ addToast }) {
           </div>
 
           <p style={{ fontSize: '0.78rem', color: 'var(--light)', marginTop: 12, lineHeight: 1.5 }}>
-            💡 Speak naturally for 3 seconds. The model analyses acoustic changes in pitch, tempo, and spectral features associated with stress.
+            💡 Speak naturally for 15 seconds. The model analyses acoustic changes in pitch, tempo, and spectral features associated with stress.
           </p>
         </div>
 
