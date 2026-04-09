@@ -1,11 +1,3 @@
-"""
-app.py — EduBridge Flask API entry point.
-
-Run:
-    python app.py
-    PORT=8000 python app.py
-"""
-
 import os
 import logging
 
@@ -70,7 +62,7 @@ chatbot_model.load(MODELS_DIR)
 # ── Entry point ────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    port  = int(os.environ.get("PORT", 5000))
+    port  = int(os.environ.get("PORT", 8000))
     debug = os.environ.get("FLASK_ENV", "production") == "development"
     logger.info("EduBridge API → http://0.0.0.0:%d", port)
     app.run(host="0.0.0.0", port=port, debug=debug)
