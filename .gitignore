@@ -1,9 +1,4 @@
-# Python
-backend/venv311/
-backend/venv/
-backend/__pycache__/
-backend/*.pyc
-backend/*.pyo
+# ── Python ────────────────────────────────────────────────
 **/__pycache__/
 **/*.pyc
 **/*.pyo
@@ -12,50 +7,53 @@ backend/*.pyo
 .env.local
 .env.*.local
 
-# Virtual environments
+# ── Virtual environments ──────────────────────────────────
 venv/
 venv311/
 .venv/
 env/
+backend/venv/
+backend/venv311/
 
-# Python build
+# ── Python build ──────────────────────────────────────────
 *.egg-info/
 dist/
 build/
 *.egg
 
-# Node
+# ── Node ──────────────────────────────────────────────────
+node_modules/
 frontend/node_modules/
+frontend/node_modules/.cache/
 frontend/.next/
 frontend/build/
 frontend/dist/
-node_modules/
 
-# Cache
-frontend/node_modules/.cache/
-.DS_Store
-Thumbs.db
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
+# ── Datasets (download separately) ───────────────────────
+backend/dataset/face/
+backend/dataset/audio/
 
-# Logs
+# ── Generated output ──────────────────────────────────────
+backend/reports/
+
+# ── Logs ──────────────────────────────────────────────────
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Testing
+# ── OS ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE ───────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Testing ───────────────────────────────────────────────
 coverage/
 .pytest_cache/
 htmlcov/
-
-# ML / Model files
-*.pkl
-*.h5
-*.pt
-*.pth
-saved_model*/
