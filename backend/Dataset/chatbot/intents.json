@@ -1,0 +1,454 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hello", "Hey", "Good morning", "Good evening", "Good afternoon",
+        "Howdy", "What's up", "How are you", "How's it going", "Hey there",
+        "Hi there", "Hello there", "Hiya", "Sup", "Yo", "Greetings",
+        "Good day", "How do you do", "Nice to meet you", "I need someone to talk to",
+        "Can you help me", "Are you there", "Is anyone there", "I want to chat"
+      ],
+      "responses": [
+        "Hey! I'm glad you're here. How are you feeling right now?",
+        "Hi! Good to see you. What's on your mind today?",
+        "Hello! I'm here for you. How's everything going?",
+        "Hey there! Whatever you're going through, I'm here to listen. What's up?",
+        "Hi! Take your time. What would you like to talk about today?",
+        "Hello! I'm here and ready to help. How are you doing?"
+      ]
+    },
+    {
+      "tag": "stress",
+      "patterns": [
+        "I feel stressed", "I am anxious", "I can't focus", "I'm overwhelmed",
+        "Too much work", "I feel pressure", "Everything is too much",
+        "I have too many assignments", "I'm burning out", "I feel burned out",
+        "I'm panicking", "I feel tense", "I'm so stressed out",
+        "Deadlines are killing me", "I can't handle this", "I'm under a lot of pressure",
+        "I feel like I'm drowning", "I have so much to do", "I don't know where to start",
+        "Everything is piling up", "I can't breathe with all this work",
+        "I'm freaking out", "I'm losing my mind", "I feel like I'm going to explode",
+        "I'm at my breaking point", "I'm completely overwhelmed",
+        "There's too much going on", "I'm struggling to cope",
+        "I feel like I'm failing at everything", "I can't keep up with everything",
+        "My workload is too heavy", "I have no energy left",
+        "I feel drained all the time", "I'm running on empty",
+        "Everything feels urgent and I don't know what to do first"
+      ],
+      "responses": [
+        "That sounds really hard. Before anything else, take one slow breath. What's the single biggest thing weighing on you right now?",
+        "I hear you. When everything feels urgent at once, nothing gets done. Let's pick just one thing. What's due soonest?",
+        "Burnout is real and it's telling you something important. When did you last take a proper break, even for 20 minutes?",
+        "Feeling overwhelmed usually means you're trying to hold too many things in your head at once. Have you written everything down? Getting it out of your head and onto paper helps more than it sounds.",
+        "Let's slow this down. Inhale for 4 counts, hold for 2, exhale for 6. Try it once. Then tell me what's going on.",
+        "You don't have to solve everything today. What's the one task that, if you finished it, would make tomorrow feel lighter?",
+        "Stress at this level means your nervous system is overloaded. Even 10 minutes away from screens can reset things a bit. What would help you decompress right now?"
+      ]
+    },
+    {
+      "tag": "anxiety",
+      "patterns": [
+        "I'm having anxiety", "I feel anxious about exams", "Exam anxiety",
+        "I'm nervous about my results", "I'm scared of failing", "What if I fail",
+        "I'm afraid of my professor", "I'm scared of presenting", "I have presentation anxiety",
+        "I'm terrified of my exam", "I can't sleep because of anxiety", "My heart is racing",
+        "I keep worrying about everything", "I can't stop thinking about worst case scenarios",
+        "I have a panic attack", "I feel like something bad is going to happen",
+        "I'm constantly worried", "I feel sick with nerves", "I can't calm down",
+        "My mind won't stop racing", "I keep catastrophising", "I'm scared of what people think",
+        "I have social anxiety", "I'm afraid to speak in class", "I can't stop overthinking",
+        "I'm worried I'm not good enough", "What if I freeze in the exam",
+        "I'm nervous about starting university", "I'm scared I made the wrong course choice",
+        "I get panic attacks before deadlines", "I wake up anxious every morning",
+        "I'm dreading tomorrow", "I feel dread all the time",
+        "I can't stop checking my work over and over"
+      ],
+      "responses": [
+        "Anxiety has a way of making worst-case scenarios feel inevitable when they're really just possibilities. What specifically are you most afraid will happen?",
+        "That racing heart and tight chest is your body preparing for a threat. Try the 5-4-3-2-1 technique: name 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, 1 you can taste. It brings you back to now.",
+        "Exam anxiety is incredibly common and it usually comes from caring, not from being underprepared. Have you done any practice papers yet? Starting with questions you know helps build confidence.",
+        "For presentations, the fear is almost always worse than the actual thing. Most people in the audience want you to do well. They're rooting for you, not waiting for you to fail.",
+        "Overthinking is exhausting. One thing that helps is setting a worry window, a specific 15 minutes where you're allowed to worry about everything. Outside that window, you postpone the thought. Sounds odd but it genuinely works.",
+        "When anxiety spikes, your breathing shortens and that makes it worse. Try box breathing: in for 4, hold for 4, out for 4, hold for 4. Repeat three times.",
+        "Social anxiety is more common at university than most people realise because everyone is pretending to have it together. What situation is making you most anxious right now?"
+      ]
+    },
+    {
+      "tag": "study_tips",
+      "patterns": [
+        "How can I study better", "I can't study", "Any study tips", "Help me focus",
+        "How do I concentrate", "I keep getting distracted", "I waste time studying",
+        "How to study effectively", "Best study method", "How to remember things",
+        "I keep forgetting what I study", "My memory is bad", "How to take better notes",
+        "I don't understand my notes", "How to prepare for exams", "Study schedule help",
+        "I study but nothing sticks", "How do I stop procrastinating while studying",
+        "I can't sit down and study", "What is the best way to revise",
+        "How do I study for multiple subjects at once", "I read but don't retain",
+        "How to make studying less boring", "I have no study routine",
+        "I keep checking my phone when I study", "How do I study without distractions",
+        "My concentration is terrible", "How long should I study for",
+        "Is it better to study in short bursts or long sessions",
+        "How do I study when I don't understand the material",
+        "I don't know how to revise properly", "What's the best revision technique",
+        "How do I revise the day before an exam", "Should I use flashcards",
+        "How to remember formulas", "How to study when tired"
+      ],
+      "responses": [
+        "Pomodoro is the most reliable method for most people: 25 minutes of focused work, then a 5 minute break. After four rounds, take a longer break. The key is that during the 25 minutes, nothing else exists.",
+        "If things aren't sticking, try active recall instead of rereading. Close your notes and write down everything you can remember. The struggle of retrieval is what builds the memory.",
+        "Spaced repetition is the closest thing to a memory cheat code. Review material after 1 day, then 3 days, then a week, then a month. Apps like Anki automate this.",
+        "The Feynman technique works well for complex topics: explain the concept out loud as if teaching a 10-year-old. Wherever you stumble is exactly where your understanding has gaps.",
+        "Phone in another room, not face down on the desk but actually in another room. That alone can increase study quality significantly. Put it on do not disturb and set a timer.",
+        "For multiple subjects, interleaving works better than blocking. Instead of doing 2 hours of one subject, alternate between subjects every 30-45 minutes. It feels harder but produces better long-term retention.",
+        "If you're tired, a 20-minute nap before studying can restore focus significantly. Any longer and you'll feel groggy. Caffeine takes 20 minutes to kick in, so coffee then nap is actually an efficient combination."
+      ]
+    },
+    {
+      "tag": "time_management",
+      "patterns": [
+        "I can't manage my time", "I have no time", "I'm always late with assignments",
+        "How to manage deadlines", "I procrastinate a lot", "I keep putting things off",
+        "I waste too much time", "How to stop procrastinating", "I missed a deadline",
+        "Too many deadlines at once", "How to plan my week", "I don't know where to start",
+        "I spend too long on one thing", "I can't prioritise", "Everything feels equally urgent",
+        "I don't have a schedule", "I lose track of time", "Hours disappear and I get nothing done",
+        "I'm always rushing at the last minute", "I submit things late",
+        "I can never finish things on time", "I underestimate how long things take",
+        "I start tasks but never finish them", "How do I plan my assignments",
+        "I don't know how to use my time", "I'm terrible at organising myself",
+        "I get distracted and lose hours", "How do I build a routine",
+        "I have poor time management", "I never have enough time",
+        "I'm always behind on everything", "How do I catch up when I'm behind",
+        "I have three deadlines this week", "I left everything to the last minute"
+      ],
+      "responses": [
+        "The most useful thing you can do right now is write every deadline you have onto one piece of paper or one screen. Just seeing everything in one place removes the mental load of tracking it all in your head.",
+        "Procrastination is almost never about laziness. It's usually about avoiding the discomfort of starting something uncertain. The two-minute rule helps: if a task takes less than two minutes, do it immediately. Momentum from small wins makes bigger tasks easier to start.",
+        "Time-blocking is simple but powerful. Assign each subject or task a specific slot in your calendar and treat it like a class you can't skip. Even 90-minute blocks with clear goals work well.",
+        "Work backwards from your deadlines. If an essay is due Friday, plan for it to be done Thursday. That gives you a buffer and removes the last-minute panic.",
+        "If you missed a deadline, email your lecturer honestly and ask what options are available. Most will respect honesty far more than silence. The worst outcome of asking is the same as not asking.",
+        "When everything feels equally urgent, use the Eisenhower matrix: split tasks into urgent and important, important but not urgent, urgent but not important, and neither. Only the first two categories get your time.",
+        "The hardest part of any task is always the first five minutes. Tell yourself you'll work on it for just five minutes. You'll almost always keep going once you've started."
+      ]
+    },
+    {
+      "tag": "motivation",
+      "patterns": [
+        "I'm not motivated", "I want to give up", "I feel tired", "I can't do this",
+        "I don't see the point", "Why am I even studying", "I hate my course",
+        "I feel like dropping out", "I'm exhausted", "I have no energy to study",
+        "I feel like a failure", "I'm not smart enough", "Everyone else is doing better than me",
+        "I feel hopeless", "Nothing is working", "I'm so behind",
+        "I don't care about anything anymore", "I've lost all interest",
+        "I'm thinking about quitting", "What's the point of any of this",
+        "I feel like I'm not cut out for this", "I'm useless",
+        "I'm not as good as everyone else", "I feel like I'm wasting my time",
+        "I have no drive left", "I feel completely flat",
+        "Nothing excites me anymore", "I'm just going through the motions",
+        "I feel like I'll never catch up", "I keep comparing myself to others",
+        "I don't belong here", "I feel like an imposter",
+        "University isn't what I expected", "I'm just here because my parents wanted it",
+        "I don't know what I'm working towards anymore"
+      ],
+      "responses": [
+        "Feeling like giving up usually means you've been pushing hard for a long time without enough rest. That's not weakness, it's depletion. When did you last genuinely switch off?",
+        "Motivation comes after action, not before it. You won't feel like starting, but starting is what creates the feeling. Pick the smallest possible version of the task and do just that.",
+        "Comparing yourself to others is always unfair because you only see their finished work, not their confusion, their failed drafts, or their panic at 2am. Everyone is struggling more than they show.",
+        "Imposter syndrome is real and incredibly common, especially at postgraduate level. The fact that you question whether you belong here is actually a sign of intellectual seriousness, not evidence that you don't.",
+        "What made you choose this course originally? Not what you told the personal statement, but what genuinely interested you. Sometimes reconnecting with that original spark helps.",
+        "You don't have to feel motivated to make progress. You just have to show up. What is one single small thing you could do today that counts as a step forward?",
+        "Being behind is fixable. Dropping out is a much larger decision with longer-term consequences. Before making any major decision, talk to your supervisor or student support. There may be options you don't know about."
+      ]
+    },
+    {
+      "tag": "lonely",
+      "patterns": [
+        "I feel lonely", "No one understands", "I feel isolated", "I have no friends at university",
+        "I don't fit in", "I feel like an outsider", "Nobody talks to me",
+        "Online learning is lonely", "I miss my family", "I feel homesick",
+        "I have no one to talk to", "I feel disconnected", "I'm always alone",
+        "Everyone seems to have friends except me", "I feel invisible",
+        "Nobody notices me", "I eat lunch alone every day",
+        "I don't know how to make friends", "I'm not good at socialising",
+        "People don't seem interested in talking to me", "I moved here and don't know anyone",
+        "I'm an international student and feel out of place",
+        "My flatmates don't talk to me", "I feel like I'm on a different wavelength to everyone",
+        "I miss home", "I miss my old friends", "Moving away was harder than I expected",
+        "I feel like I'm watching everyone else live their life",
+        "I've been here a semester and still have no close friends",
+        "I find it hard to connect with people", "I feel like no one really knows me",
+        "I'm surrounded by people but still lonely"
+      ],
+      "responses": [
+        "Loneliness at university is more common than anyone admits. Most people are performing confidence while feeling exactly what you're feeling. You're not the odd one out.",
+        "Making friends as an adult is genuinely harder than it was at school. It takes repeated low-stakes contact over time. Is there a study group, society, or regular class where you see the same people each week?",
+        "Homesickness is a form of grief. You're mourning the familiar. It usually eases after the first few months but it's real while it lasts. Are you in regular contact with people back home?",
+        "Even sending one message to a classmate about something course-related is a real connection. It doesn't have to be a deep conversation. Small contact adds up.",
+        "As an international student, the adjustment is even harder because you're navigating cultural difference on top of everything else. Does your university have an international student community or support service?",
+        "Feeling like you don't belong is one of the most painful feelings there is. I'm here with you right now. Would it help to talk through what makes connecting feel difficult for you?",
+        "Shared activities build friendships faster than conversations do. A sport, a volunteering role, a music group, anything where you see the same people regularly and have something to talk about."
+      ]
+    },
+    {
+      "tag": "sleep",
+      "patterns": [
+        "I can't sleep", "I'm not sleeping well", "I have insomnia", "I stay up too late",
+        "I'm always tired", "I sleep too much", "I can't wake up in the morning",
+        "My sleep schedule is broken", "I pull all nighters", "I study until 3am",
+        "I wake up in the middle of the night", "I can't switch my brain off at night",
+        "I lie awake thinking about everything", "I only sleep 4 hours",
+        "I'm exhausted but can't sleep", "I fall asleep during lectures",
+        "I sleep through my alarms", "My sleep is all over the place",
+        "I'm nocturnal now", "I go to sleep at 4am", "I nap all day and can't sleep at night",
+        "I have racing thoughts when I try to sleep", "I keep checking my phone in bed",
+        "I can't sleep before an exam", "Anxiety keeps me awake",
+        "I wake up already feeling tired", "I'm running on no sleep",
+        "How do I fix my sleep schedule", "Is it bad to pull an all nighter before an exam",
+        "I feel awful in the mornings", "I can't function without 10 hours sleep"
+      ],
+      "responses": [
+        "All-nighters before exams actively make things worse. Sleep is when your brain consolidates what you've learned. Going in sleep-deprived means your recall will be worse, not better. A shorter study session plus sleep beats a longer one without it.",
+        "The most impactful thing for sleep is consistency. Getting up at the same time every day, including weekends, stabilises your body clock faster than almost anything else.",
+        "If your brain won't switch off, try a brain dump before bed. Write down everything you're thinking about, your to-do list, your worries, all of it. It gets it out of your head so it stops nagging you.",
+        "Screens emit blue light that suppresses melatonin and keeps your brain alert. Even 30 minutes without screens before bed makes a meaningful difference. Replace the scroll with reading, a podcast, or just lying in the dark.",
+        "If you're napping during the day because you're exhausted at night, the nap is probably making the night sleep harder. Keep naps to 20 minutes maximum and not after 3pm.",
+        "Racing thoughts at night are often anxiety in disguise. What are the main things your mind keeps returning to when you're trying to sleep?",
+        "Caffeine has a half-life of about 5-6 hours, meaning half of a 3pm coffee is still in your system at 9pm. Cutting caffeine after 2pm can improve sleep quality noticeably."
+      ]
+    },
+    {
+      "tag": "mental_health",
+      "patterns": [
+        "I feel depressed", "I'm feeling really low", "I have depression",
+        "I don't enjoy anything anymore", "I feel empty", "I feel numb",
+        "I'm not okay", "I'm struggling mentally", "I need help",
+        "I feel really bad", "I've been crying a lot", "I feel worthless",
+        "I feel like nobody cares", "I've been feeling this way for weeks",
+        "I don't want to get out of bed", "I've lost interest in everything",
+        "I feel like a burden", "I don't see a future",
+        "I feel like things will never get better", "I'm really not doing well",
+        "I'm having a really rough time", "I feel completely lost",
+        "I'm not coping", "I feel like I'm falling apart",
+        "Everything feels dark", "I can't see the point anymore",
+        "I'm struggling more than people realise", "I feel like I'm disappearing",
+        "I feel detached from everything", "I feel like I'm watching my life from outside",
+        "I don't feel like myself", "I haven't felt happy in a long time",
+        "I'm just existing not living", "I feel really alone with all of this"
+      ],
+      "responses": [
+        "Thank you for telling me. That took courage. What you're describing sounds serious and you deserve real support. Please reach out to your university counselling service. Most offer same-week appointments and it's completely confidential.",
+        "Feeling this way for weeks is your mind asking for help. I'm glad you're talking about it. Is there someone in your life, a friend, family member, or tutor, who knows how you're feeling right now?",
+        "What you're carrying sounds really heavy. You don't have to figure this out alone. Your university has a wellbeing team specifically for moments like this. Would it help if we worked out how to contact them together?",
+        "You matter, and what you're feeling is real. Low mood that stays around this long usually responds well to professional support. Counselling and therapy make a real difference. Please don't wait to ask for help.",
+        "I hear you. You reached out, which means part of you is looking for a way through. That part is right. There are people trained to help with exactly this. Please contact student services today if you can.",
+        "Feeling like a burden is one of the most common symptoms of depression and it is not an accurate reflection of how people feel about you. Please talk to someone today, a GP, counsellor, or the Samaritans on 116 123 in the UK, free and available 24 hours.",
+        "I'm not able to give you what you need right now, but someone can. Your university's student wellbeing team or a GP can talk to you properly and help you find the right support. Please reach out to them today."
+      ]
+    },
+    {
+      "tag": "exam_preparation",
+      "patterns": [
+        "How to prepare for exams", "Exam tips", "How to revise", "Best revision techniques",
+        "How many days before exam should I start", "Exam strategy", "How to pass my exam",
+        "I have an exam tomorrow", "Last minute revision tips", "How to do well in exams",
+        "What should I focus on when revising", "How do I revise efficiently",
+        "I don't know what will come up in the exam", "How to handle exam pressure",
+        "I freeze in exams", "I know the material but blank in exams",
+        "How to manage time in an exam", "I run out of time in exams",
+        "What should I do the night before an exam", "What should I eat before an exam",
+        "Should I revise the morning of an exam", "How to read exam questions properly",
+        "I always misread questions in exams", "How to get more marks in exams",
+        "I panic when I see a question I don't know", "How to deal with a hard exam paper",
+        "How do I write a good exam essay", "How should I structure exam answers"
+      ],
+      "responses": [
+        "Past papers are the single best revision tool available. Do them under timed exam conditions. Mark yourself honestly. The patterns you find tell you exactly what to focus on.",
+        "If your exam is tomorrow, do not try to learn new material. Review key summaries, sleep well, eat breakfast, and arrive with time to spare. Cramming new content the night before rarely helps and often increases anxiety.",
+        "Blanking in exams is usually an anxiety response, not a memory failure. If it happens, write something, anything, even bullet points. Getting your hand moving breaks the freeze.",
+        "Time management in exams: read the whole paper first and note how many marks each question carries. Allocate time proportionally. A 10-mark question should not get the same time as a 40-mark one.",
+        "Start revision at least two weeks before the exam. Week one covers all the material. Week two focuses on weak areas and practice questions. This spacing means you enter the exam with active not just passive knowledge.",
+        "For essay-style exams, answer the question asked, not the question you wished they had asked. Read it twice before you start. A clear structure with introduction, two or three developed points, and conclusion is more valuable than covering more ground loosely.",
+        "The night before: do a light review of your key summaries, eat a proper meal, avoid alcohol, and be in bed by a reasonable time. Your brain consolidates learning during sleep."
+      ]
+    },
+    {
+      "tag": "assignment_help",
+      "patterns": [
+        "I don't understand my assignment", "How to write an essay", "Assignment help",
+        "I don't know how to start my assignment", "How to structure a report",
+        "How to reference properly", "What is a literature review", "How to cite sources",
+        "My assignment is due soon", "I'm stuck on my coursework",
+        "How do I write an introduction", "How do I write a conclusion",
+        "What does critically analyse mean", "I don't understand the question",
+        "How long should each section be", "I don't know how to argue a point",
+        "I can't find enough sources", "How do I find academic sources",
+        "What counts as a good source", "Can I use websites as sources",
+        "How do I paraphrase properly", "I keep accidentally plagiarising",
+        "How do I avoid plagiarism", "How do I write a dissertation proposal",
+        "How do I structure a research paper", "What is an abstract",
+        "How many words should my introduction be", "I don't know how to connect my paragraphs",
+        "My writing doesn't flow", "I write too informally",
+        "How do I improve my academic writing", "I keep going off topic",
+        "My argument isn't clear", "How do I make my writing more critical"
+      ],
+      "responses": [
+        "Before writing anything, make sure you understand exactly what the question is asking. Underline the key instruction words: analyse, evaluate, compare, discuss. Each one means something different.",
+        "For essays: a clear introduction that states your argument, body paragraphs each making one point supported by evidence, and a conclusion that ties your argument together. That structure works every time.",
+        "If you're stuck on how to start, write the body first. Introduction paragraphs are often easier once you know what you're introducing. Many writers write the intro last.",
+        "For academic sources, start with Google Scholar, your university library databases, and the reference lists of papers you've already found. If a source has been cited many times, it's worth reading.",
+        "Critically analysing means asking: what is this source claiming, what evidence does it use, are there weaknesses in the argument, and how does it relate to other sources? It is not just summarising what someone said.",
+        "Harvard referencing: for in-text citations use Author Year in brackets or Author Year as part of the sentence. Your reference list at the end should list everything alphabetically by surname. Tools like Cite This For Me or Zotero do the formatting for you.",
+        "To avoid accidental plagiarism, never copy and paste anything into your draft document. Take notes in your own words. If you need a direct quote, put it in quotation marks and cite it immediately."
+      ]
+    },
+    {
+      "tag": "self_care",
+      "patterns": [
+        "How to take care of myself", "I forget to eat", "I'm not eating properly",
+        "How to stay healthy as a student", "I don't exercise", "I sit all day",
+        "How to balance study and life", "I have no work life balance", "I need a break",
+        "How to relax", "What should I do to de-stress", "I never take breaks",
+        "I feel guilty when I'm not studying", "I can't enjoy free time",
+        "I don't do anything for fun anymore", "I've stopped doing things I enjoy",
+        "How do I switch off from university", "I'm always in study mode",
+        "I don't know how to rest", "Is it okay to take a day off",
+        "I feel bad when I'm not productive", "I need to learn to take breaks",
+        "I'm not looking after myself", "I skip meals when I'm busy",
+        "I live on junk food and coffee", "I haven't been outside in days",
+        "I don't get fresh air", "I spend all day at my desk",
+        "How do I build healthy habits", "I want to take better care of myself",
+        "I'm neglecting my health for my studies", "I'm physically rundown"
+      ],
+      "responses": [
+        "Rest is not a reward for finishing work. It's a requirement for doing work well. Your brain needs downtime to consolidate information and restore focus. Build breaks into your schedule, not just at the end.",
+        "Even a 10-minute walk makes a measurable difference to cortisol levels and mood. You don't need a gym or a workout plan. Just going outside counts.",
+        "Eating regularly stabilises your blood sugar and your mood. When you're too busy to cook, something simple like toast with eggs or tinned beans is far better than skipping the meal entirely.",
+        "If you feel guilty when you're not studying, your sense of self-worth has become too tied to productivity. You are allowed to exist and rest without earning it. What did you used to enjoy before university got intense?",
+        "The most sustainable studying happens when it's part of a life, not the whole of it. Students who take regular exercise, eat, and sleep consistently tend to outperform those who cut all of that out to study more hours.",
+        "Social connection counts as self-care. Even 20 minutes talking to a friend or family member can shift your mood significantly. When did you last do something that had nothing to do with your degree?",
+        "Building one small habit at a time is more effective than overhauling everything. Start with one thing: drink more water, go for one walk a day, eat breakfast. Get that stable before adding another."
+      ]
+    },
+    {
+      "tag": "positive_affirmation",
+      "patterns": [
+        "I did well today", "I finished my assignment", "I passed my exam",
+        "I'm feeling good", "I'm proud of myself", "I managed to study today",
+        "Things are going well", "I feel better now", "I'm making progress",
+        "I got a good grade", "I submitted on time", "I finally finished something",
+        "I feel more confident today", "Something good happened",
+        "I had a productive day", "I actually enjoyed my lecture today",
+        "I made a new friend", "I reached out for help and it worked",
+        "I'm feeling more positive", "I achieved something today",
+        "I completed a difficult task", "I didn't give up",
+        "I pushed through even though I didn't want to",
+        "I'm starting to feel like myself again", "Things are looking up",
+        "I got some good feedback", "My supervisor said something encouraging",
+        "I feel on top of things for once", "I solved a problem I was stuck on",
+        "I finally understand something I've been struggling with"
+      ],
+      "responses": [
+        "That's genuinely great. Celebrating small wins matters more than people think. What helped you get there today?",
+        "Well done. Progress is progress, however it looks. What's next?",
+        "That took effort. You should feel good about that.",
+        "It's worth pausing to appreciate this. You worked for it. What did you do well?",
+        "Brilliant. Keep hold of this feeling. It's a reminder that you're capable of this.",
+        "That's exactly the kind of thing worth recognising. What would you say to a friend who told you this news?",
+        "Really glad to hear that. You deserve to feel proud."
+      ]
+    },
+    {
+      "tag": "financial_stress",
+      "patterns": [
+        "I'm struggling with money", "I can't afford food", "I'm broke",
+        "Student loan isn't enough", "I'm in debt", "I'm worried about finances",
+        "I can't afford my rent", "I have to work too many hours",
+        "My part time job is affecting my studies", "I can't focus because of money stress",
+        "I don't have enough money for books", "I'm behind on bills",
+        "My financial situation is really bad", "I'm thinking of dropping out because of money",
+        "I can't afford to stay at university", "Money is causing me so much stress",
+        "I have no savings", "I'm worried about my financial future",
+        "I have to support my family too", "I feel guilty spending any money"
+      ],
+      "responses": [
+        "Financial stress is one of the most draining things to carry, and it often goes untalked about at university. You're not alone in this.",
+        "Your university almost certainly has a hardship fund or emergency financial support. It's worth contacting student services to find out what's available. Many students don't know these funds exist.",
+        "If your part-time work is affecting your studies, your course administrator or tutor should know. There may be options like deadline extensions that can help while you get on top of things.",
+        "Food banks are available in most towns and many universities have their own. There is no shame in using them, they exist precisely for situations like this.",
+        "Student debt usually has more manageable repayment terms than commercial debt. If you're worried about the long-term picture, Citizens Advice offers free guidance.",
+        "Working too many hours to make ends meet is a real barrier to academic success. Have you explored whether you're eligible for a bursary, scholarship, or additional student support?",
+        "This sounds really difficult. Financial pressure affects everything, sleep, concentration, motivation. What feels most urgent right now, immediate money, or the longer-term situation?"
+      ]
+    },
+    {
+      "tag": "relationship_problems",
+      "patterns": [
+        "I'm having relationship problems", "My relationship is affecting my studies",
+        "I broke up with my partner", "I'm going through a breakup",
+        "I'm having family problems", "My family don't support me",
+        "I'm arguing with my flatmates", "My flatmates are making my life difficult",
+        "I'm having friendship problems", "My best friend and I had a falling out",
+        "I feel let down by someone I trusted", "Someone hurt me",
+        "I'm dealing with a difficult family situation", "My parents are putting pressure on me",
+        "I feel unsupported by the people around me", "I'm in a toxic relationship",
+        "I don't know how to deal with conflict", "I'm avoiding someone at university",
+        "A situation with someone is affecting my mental health",
+        "I had an argument with someone important to me"
+      ],
+      "responses": [
+        "Relationship difficulties have a way of taking up a lot of mental space and making everything else harder to focus on. Do you want to talk through what's happening?",
+        "Breakups are genuinely one of the most disruptive things that can happen to your concentration and motivation. Be patient with yourself while you process it.",
+        "Family pressure from people you love is one of the hardest kinds of stress because you can't just cut them off and you can't make them understand. What are they putting pressure on you about?",
+        "Flatmate conflict can make home feel like another stressor rather than a refuge. Have you been able to address it directly with them, or does that feel too difficult right now?",
+        "Sometimes the most useful thing is just to have someone listen. I'm here for that. Tell me more about what's been happening.",
+        "Whatever happened, your wellbeing matters. If a situation is affecting your ability to study or function, your university's pastoral support team can help and conversations with them are confidential.",
+        "Conflict and hurt take time to process. You don't need to have it resolved immediately. What would help most right now, talking it through, or figuring out what to do next?"
+      ]
+    },
+    {
+      "tag": "career_uncertainty",
+      "patterns": [
+        "I don't know what to do after university", "I'm worried about my future",
+        "I don't know what career I want", "I'm scared about graduating",
+        "I don't have a plan after I finish", "Everyone seems to know what they want except me",
+        "I feel behind career-wise", "I don't have enough work experience",
+        "I'm worried about getting a job", "The job market seems really competitive",
+        "I don't know if my degree will lead to a job", "I feel like I chose the wrong degree",
+        "I'm not sure this is the right path for me", "I have no idea what I'm good at",
+        "I'm applying for jobs and getting rejected", "I don't know how to write a CV",
+        "I feel unprepared for the real world", "I'm scared of leaving university",
+        "Graduation is coming and I'm terrified", "I don't know what I'm working towards"
+      ],
+      "responses": [
+        "Not knowing what you want to do after university is more normal than the careers fairs would have you believe. Most people figure it out gradually through experience, not by having a plan at 22.",
+        "Your university careers service is genuinely worth using. They offer CV reviews, mock interviews, and one-to-one appointments. Most students never use them, which is a shame because the advice is specific and practical.",
+        "Feeling behind career-wise often comes from comparing yourself to the loudest people in the room. Many of your peers are equally uncertain but not saying so.",
+        "Work experience matters a lot, but it doesn't have to be a formal placement. Part-time work, volunteering, freelancing, and even projects for university societies all count and can be framed well on a CV.",
+        "Rejection from job applications is almost universal and rarely reflects your worth. It usually reflects fit, timing, or competition. Try to treat each application as practice.",
+        "If you're questioning whether you chose the right degree, that's worth sitting with rather than dismissing. What would you study or do if the financial consideration was removed? That answer often points to something real.",
+        "The gap between university and having your career figured out is normal and usually shorter than it feels. What are you interested in, even loosely? We can think through what that might lead to."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye", "Goodbye", "See you", "Thanks", "Thank you", "That helped",
+        "I'm going now", "Talk later", "See you later", "Cheers",
+        "Thanks for listening", "That was really helpful", "I feel better now",
+        "I'll come back if I need to", "You've helped a lot",
+        "I think I know what to do now", "I needed that",
+        "Thanks for the advice", "I appreciate it", "That's all for now",
+        "I'll try that", "Good talk", "Speak soon"
+      ],
+      "responses": [
+        "Take care of yourself. I'm here whenever you need.",
+        "Glad that helped. Come back any time.",
+        "You did the right thing by talking about it. Take care.",
+        "Good luck with everything. You've got this.",
+        "I'll be here if you need to talk again. Look after yourself.",
+        "Take it one day at a time. You're doing better than you think."
+      ]
+    }
+  ]
+}
