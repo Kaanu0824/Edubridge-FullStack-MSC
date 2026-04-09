@@ -113,14 +113,14 @@ Edubridge-Full Stack/
     ├── dataset/
     │   ├── face/
     │   │   ├── README.txt
-    │   │   ├── train/               ← FER2013 training images
-    │   │   └── test/                ← FER2013 test images
+    │   │   ├── train/               
+    │   │   └── test/                
     │   ├── audio/
     │   │   ├── README.txt
-    │   │   ├── normal/              ← RAVDESS calm/neutral files
-    │   │   └── stressed/            ← RAVDESS angry/fearful/sad files
+    │   │   ├── normal/              
+    │   │   └── stressed/            
     │   └── chatbot/
-    │       └── intents.json         ← 17 intent categories
+    │       └── intents.json         
     │
     ├── saved_models/                 ← all trained model files go here
     │   ├── face_model.keras
@@ -161,7 +161,7 @@ cd "Edubridge-Full Stack/backend"
 
 # 2. Create and activate virtual environment
 python3 -m venv venv
-source venv/bin/activate        # Mac/Linux
+source venv/bin/activate        # Mac
 
 
 # 3. Install dependencies
