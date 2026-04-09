@@ -1,9 +1,3 @@
-"""
-models/voice.py — Audio stress model loader and inference.
-
-Loads from: saved_models/audio_model.keras
-"""
-
 import os
 import logging
 import numpy as np

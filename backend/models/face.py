@@ -1,9 +1,3 @@
-"""
-models/face.py — Face emotion model loader and inference.
-
-Loads from: saved_models/face_model.keras
-"""
-
 import os
 import logging
 
