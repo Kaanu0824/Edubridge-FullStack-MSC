@@ -135,13 +135,14 @@ source venv/bin/activate        # Mac/Linux
 pip install -r requirements.txt
 pip install tf_keras scikit-learn --upgrade
 
+
 # 4. Train chatbot model
-python training/face.py
-python training/audio.py
+python training/train_face_model.py
+python training/train_audio_model.py
 python training/train_chatbot.py
 
 # 5. Start the API
-PORT=8000 python app.py
+python app.py
 ```
 
 The backend will be available at `http://localhost:8000`.
@@ -157,7 +158,7 @@ npm install --legacy-peer-deps
 npm install ajv@^8 --legacy-peer-deps
 
 # 3. Start development server
-PORT=3001 npm start
+npm start
 ```
 
 The app will be available at `http://localhost:3001`.
