@@ -1,9 +1,3 @@
-"""
-routes/voice.py — Voice stress analysis endpoint.
-
-POST /api/analyze/voice
-"""
-
 from flask import Blueprint, request, jsonify
 from models import voice as voice_model
 from utils import decode_base64_audio, extract_mfcc

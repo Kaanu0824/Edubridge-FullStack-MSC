@@ -1,11 +1,3 @@
-"""
-routes/report.py — Stress report endpoints.
-
-POST /api/analyze/combined
-GET  /api/report
-GET  /api/report/history
-"""
-
 import os
 import json
 import datetime

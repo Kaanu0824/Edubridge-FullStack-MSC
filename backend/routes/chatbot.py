@@ -1,9 +1,3 @@
-"""
-routes/chatbot.py — Chatbot endpoint.
-
-POST /api/chat
-"""
-
 import datetime
 from flask import Blueprint, request, jsonify
 from models import chatbot as chatbot_model

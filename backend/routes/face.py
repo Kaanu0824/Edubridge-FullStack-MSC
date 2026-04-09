@@ -1,9 +1,3 @@
-"""
-routes/face.py — Face emotion analysis endpoint.
-
-POST /api/analyze/face
-"""
-
 import logging
 import cv2
 from flask import Blueprint, request, jsonify
