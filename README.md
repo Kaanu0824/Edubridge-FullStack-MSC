@@ -204,13 +204,17 @@ The app will be available at `http://localhost:3001`.
 
 ```bash
 
-# 1. Run everything
+# 1. Install Dependencies
+pip3 install librosa flask
+pip3 install opencv-python tensorflow
+
+# 2. Run everything
 python run_tests.py
 
-# 2.Run with detail
+# 3.Run with detail
 python run_tests.py --verbose
 
-# 3.Run one suite only
+# 4.Run one suite only
 python run_tests.py --suite fusion
 python run_tests.py --suite api
 
