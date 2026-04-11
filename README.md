@@ -217,9 +217,10 @@ python run_tests.py --verbose
 # 4.Run one suite only
 python run_tests.py --suite fusion
 python run_tests.py --suite api
+```
+---
 
-
-## API Endpoints
+### API Endpoints
 
 | Method | Endpoint | Description |
 |---|---|---|
