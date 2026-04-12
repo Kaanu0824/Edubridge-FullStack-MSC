@@ -232,4 +232,10 @@ python run_tests.py --suite api
 | GET | `/api/report` | Get latest stress report |
 | GET | `/api/report/history` | Get all stored reports |
 
+### Data Set
+Face Emotion Recognition : FER-2013 (Facial Expression Recognition)
+( https://www.kaggle.com/datasets/msambare/fer2013)
+
+Voice Stress Detection : RAVDESS or TESS
+( https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio )
 
