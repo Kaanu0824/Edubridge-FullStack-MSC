@@ -174,9 +174,9 @@ export default function VoiceAnalysis({ addToast }) {
       mr.start(250);
       setRecording(true);
       drawWave();
-      addToast('Recording… speak for 3 seconds', 'info');
+      addToast('Recording… speak for 10 seconds', 'info');
 
-      let c = 3;
+      let c = 10;
       setCountdown(c);
       const iv = setInterval(() => {
         c -= 1;
@@ -302,7 +302,7 @@ export default function VoiceAnalysis({ addToast }) {
             {!recording ? (
               <button className="btn btn-primary" onClick={startRecording} disabled={loading}>
                 {loading ? <div className="spinner" /> : <Mic size={16} />}
-                {loading ? 'Analysing…' : 'Record 3 Seconds'}
+                {loading ? 'Analysing…' : 'Record 10 Seconds'}
               </button>
             ) : (
               <button className="btn btn-danger" onClick={stopManually}>
@@ -316,7 +316,7 @@ export default function VoiceAnalysis({ addToast }) {
           </div>
 
           <p style={{ fontSize: '0.78rem', color: 'var(--light)', marginTop: 12, lineHeight: 1.5 }}>
-            💡 Speak naturally for 3 seconds. The model analyses acoustic changes in pitch,
+            💡 Speak naturally for 10 seconds. The model analyses acoustic changes in pitch,
             tempo, and spectral features associated with stress.
           </p>
         </div>
